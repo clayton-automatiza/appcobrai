@@ -225,7 +225,9 @@ export function DunningRulesScreen() {
                   <label className="text-xs font-semibold text-slate-700">Escopo</label>
                   <select
                     value={ruleScope}
-                    onChange={(e) => setRuleScope(e.target.value as "global" | "tenant" | "segment" | "customer")}
+                    onChange={(e) =>
+                      setRuleScope(e.target.value as 'global' | 'tenant' | 'segment' | 'customer')
+                    }
                     className="w-full h-9 rounded-md border border-slate-200 bg-slate-50 px-3 text-xs"
                   >
                     <option value="tenant">Tenant Específico</option>
